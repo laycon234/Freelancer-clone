@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/js/bootstrap.bundle.js">
+    <link rel="stylesheet" href="membership.css">
+    <script src="dashboard.js" defer></script>
+    <script src="https://kit.fontawesome.com/bbacfaf443.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="freecon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=notifications" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Membership | Freelancer</title>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="w-100 d-flex justify-content-center position-fixed top-0">
+        <div class="nav-cont h-100 d-flex align-items-center">
+            <button class="nav-btn1 btn h-100">
+                <img src="freelancer-logo-light.svg" alt="img">
+            </button>
+            <div class="scd-btn h-100 d-flex ms-2">
+                <button
+                    class="nav-btn2 btn d-flex align-items-center justify-content-evenly d-lg-flex d-md-flex d-none position-relative"
+                    id="man-show5">
+                    <span class="material-symbols-outlined">explore</span>
+                    <span class="fs-6 none">Browse</span>
+                    <div class="man-drop5 position-absolute">
+                        <div class="point5 position-absolute"></div>
+                        <div class="main-man5 bg-white position-absolute">
+                            <div class="inp-cont mt-3 d-flex justify-content-between align-items-center">
+                                <i class="fa-solid fa-magnifying-glass fs-3 ms-4"></i>
+                                <input type="text" placeholder="Search Freelancers.com" class="h-100 fs-5 me-4">
+                            </div>
+                            <div class="search-drop mt-4">
+                                <p class="fs-5 fw-bolder text-start">Search</p>
+                                <div class="search-col w-100 d-flex">
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-2 text-primary">folder_check</span>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Projects</h5>
+                                            <p class="fs-6 text-start">Explore exciting new project opportunites now!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-2 text-primary">emoji_events</span>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Contests</h5>
+                                            <p class="fs-6 text-start">Unleash your talent and win Freelancer contests!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-2 text-primary">account_circle</span>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Freelancers</h5>
+                                            <p class="fs-6 text-start">Find top-rated freelancers for your project</p>
+                                        </div>
+                                    </div>
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-2 text-primary">bookmark</span>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Bookmarks</h5>
+                                            <p class="fs-6 text-start">Access your saved project and contest
+                                                opportunites</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-drop mt-4">
+                                <p class="fs-5 fw-bolder text-start">Freelancing Tools</p>
+                                <div class="search-col w-100 d-flex">
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-2 text-primary">verified_user</span>
+                                        <div class="ic-wordn ms-2">
+                                            <p class="fs-6 text-start">Verified by Freelancer Increase your chances of
+                                                winning projects</p>
+                                        </div>
+                                    </div>
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-2 text-warning">star_rate</span>
+                                        <div class="ic-wordn ms-2">
+                                            <p class="fs-6 text-start">Preffered Freelancer Access exclusive project and
+                                                stand out</p>
+                                        </div>
+                                    </div>
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <img src="freecon.png" alt="">
+                                        <div class="ic-wordn ms-2">
+                                            <p class="fs-6 text-start">Membership Get earning opportunites and savings
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-2 text-primary">school</span>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Exams</h5>
+                                            <p class="fs-6 text-start">Prove your skills to win more work</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-drop mt-4">
+                                <p class="fs-5 fw-bolder text-start">Client Tools</p>
+                                <div class="search-col w-100 d-flex">
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <i class="fa-solid fa-shield fs-4"></i>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Recruiter</h5>
+                                            <p class="fs-6 text-start">Get assistance finding the perfect freelancer</p>
+                                        </div>
+                                    </div>
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <i class="fa-solid fa-flag fs-4"></i>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Technical Co-pilot</h5>
+                                            <p class="fs-6 text-start">Our staff will ensure your project is a success
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <i class="fa-solid fa-globe fs-4 text-primary"></i>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Enterprise</h5>
+                                            <p class="fs-6 text-start">Turn your organization's ideas into reality</p>
+                                        </div>
+                                    </div>
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <i class="fa-solid fa-location-dot fs-4 text-primary"></i>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Local Jobs</h5>
+                                            <p class="fs-6 text-start">Get help in any location, anywhere in the world
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-drop my-4">
+                                <p class="fs-5 fw-bolder text-start">Explore Freelancer</p>
+                                <div class="search-col w-100 d-flex">
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-2 text-warning">diamond</span>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Showcase</h5>
+                                            <p class="fs-6 text-start">Get inpiration from the world's best</p>
+                                        </div>
+                                    </div>
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-2 text-primary">event_note</span>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Community</h5>
+                                            <p class="fs-6 text-start">Browse resources for your business and career</p>
+                                        </div>
+                                    </div>
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-2 text-success">group</span>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Discover</h5>
+                                            <p class="fs-6 text-start">Discover featured works from our best freelancers
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-2 text-primary">help</span>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Customer Support</h5>
+                                            <p class="fs-6 text-start">Browse the help center or get in touch with us
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <button
+                    class="nav-btn2 btn d-flex align-items-center justify-content-evenly d-lg-flex d-md-flex d-none position-relative"
+                    id="man-show">
+                    <span class="material-symbols-outlined">work</span>
+                    <span class="fs-6 none">Manage</span>
+                    <div class="man-drop position-absolute">
+                        <div class="point position-absolute"></div>
+                        <div class="main-man bg-white position-absolute">
+                            <div class="mana1 d-flex justify-content-between align-items-center mt-4">
+                                <p class="fs-6 fw-bolder">Recent Projects</p>
+                                <a href="" class="fs-6">View All</a>
+                            </div>
+                            <div class="mana2 mt-2">
+                                <label>You do not have any active projects.</label>
+                                <p><a href="">Create one</a> to get started!</p>
+                            </div>
+                            <div class="mana1 d-flex justify-content-between align-items-center mt-3">
+                                <p class="fs-6 fw-bolder ms-2">Lists</p>
+                                <a href="" class="fs-6">View All</a>
+                            </div>
+                            <div class="mana3 d-flex align-items-center">
+                                <div class="hov-grey"></div>
+                                <div class="icon-love d-flex align-items-center">
+                                    <i class="fa-regular fa-heart fs-5 ms-3"></i>
+                                    <p class="fs-6 ms-6 mt-3">Favorite</p>
+                                </div>
+                            </div>
+                            <div class="mana3 d-flex align-items-center">
+                                <div class="hov-grey"></div>
+                                <div class="icon-love d-flex align-items-center">
+                                    <i class="fa-solid fa-briefcase fs-5 ms-3"></i>
+                                    <p class="fs-6 ms-6 mt-3">My Hires</p>
+                                </div>
+                            </div>
+                            <div class="mana3 d-flex align-items-center">
+                                <div class="hov-grey"></div>
+                                <div class="icon-love d-flex align-items-center">
+                                    <i class="fa-regular fa-eye fs-5 ms-3"></i>
+                                    <p class="fs-6 ms-6 mt-3">Recently Viewed</p>
+                                </div>
+                            </div>
+                            <div class="mana1 d-flex justify-content-between align-items-center mt-3">
+                                <p class="fs-6 fw-bolder">Tasklists</p>
+                                <a href="" class="fs-6">View All</a>
+                            </div>
+                            <div class="mana3 d-flex align-items-center">
+                                <div class="hov-grey"></div>
+                                <div class="icon-love d-flex align-items-center">
+                                    <i class="fa-solid fa-list-check fs-5 ms-3"></i>
+                                    <p class="fs-6 ms-3 mt-3">@Jaybee tasklists</p>
+                                </div>
+                            </div>
+                            <div class="mana1 d-flex justify-content-between align-items-center mt-4">
+                                <p class="fs-6 fw-bolder">Project Updates</p>
+                                <a href="" class="fs-6">View All</a>
+                            </div>
+                            <div class="mana2 mt-2">
+                                <label>You do not have any active projects.</label>
+                                <p><a href="">Browse projects</a> to start work and give updates</p>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <button
+                    class="nav-btn2 btn d-flex align-items-center justify-content-evenly d-lg-flex d-md-flex d-none">
+                    <span class="material-symbols-outlined">group</span>
+                    <span class="fs-6 none">Groups</span>
+                </button>
+            </div>
+            <div class="nothing"></div>
+            <div class="nxt-cont h-100 d-flex">
+                <button class="nav-btn3 btn ms-2 d-flex align-items-center justify-content-evenly d-lg-none d-md-none">
+                    <span class="material-symbols-outlined cha fs-3">info</span>
+                </button>
+                <button class="nav-btn3 btn ms-2 d-flex align-items-center justify-content-evenly position-relative"
+                    id="man-show1">
+                    <span class="material-symbols-outlined cha fs-3">notifications</span>
+                    <div class="man-drop1 position-absolute">
+                        <div class="point1 position-absolute"></div>
+                        <div class="main-man1 bg-white position-absolute">
+                            <div class="mana1 d-flex justify-content-between align-items-center mt-4">
+                                <p class="fs-6 fw-bolder">Notifications</p>
+                            </div>
+                            <i class="fa-regular fa-bell-slash text-primary"></i>
+                            <p class="mt-4">You don't have any notifications as of this moment. <br>
+                                Would you like to search for a project instead?</p>
+                            <div class="btn fs-6 fw-bolder btn-proj">Search Project</div>
+                        </div>
+                    </div>
+                </button>
+                <button class="nav-btn3 btn ms-2 d-flex align-items-center justify-content-evenly position-relative"
+                    id="man-show3">
+                    <span class="material-symbols-outlined cha fs-3">folder_open</span>
+                    <div class="man-drop3 position-absolute">
+                        <div class="point3 position-absolute"></div>
+                        <div class="main-man3 bg-white position-absolute">
+
+                        </div>
+                    </div>
+                </button>
+                <button class="nav-btn3 btn ms-2 d-flex align-items-center justify-content-evenly position-relative"
+                    id="man-show2">
+                    <span class="material-symbols-outlined cha fs-3">chat_bubble</span>
+                    <div class="man-drop2 position-absolute">
+                        <div class="point2 position-absolute"></div>
+                        <div class="main-man2 bg-white position-absolute">
+                            <div class="mana1 d-flex justify-content-between align-items-center mt-4">
+                                <p class="fs-6 fw-bolder">Recent Messages</p>
+                                <a href="" class="fs-6">View All</a>
+                            </div>
+                            <img src="live-chat.svg" class="mess" alt=""><br>
+                            <label>Start connecting with others by <a href="">browsing</a> or <a href="">posting a <br>
+                                    project</a></label>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="hide-not"></div>
+            <div class="last-end align-items-center h-100 d-lg-flex d-md-flex d-none">
+                <div class="pink-btn ms-2">
+                    <button class="nav-btn4 btn d-flex align-items-center justify-content-evenly ">
+                        <span class="text-white fs-6 fw-bolder">Post a Project</span>
+                    </button>
+                </div>
+                <div class="lst-btn ms-2 h-100 d-flex position-relative" id="man-show4">
+                    <button class="btn prof-btn d-flex align-items-center h-100">
+                        <div class="pic"></div>
+                        <div class="prof-word d-flex flex-column align-items-start">
+                            <span class="text-white fw-bold ms-2">@Jaybeej7</span>
+                            <span class="text-white fw-bold ms-2">$1000.00 USD</span>
+                        </div>
+                        <div class="man-drop4 position-absolute">
+                            <div class="point4 position-absolute"></div>
+                            <div class="main-man4 bg-white position-absolute">
+                                <p class="fs-5 fw-bolder my-4 text-start ms-4">Account</p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="freelancer/profile.html"
+                                        class="hov-orf">View Profile</a></p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="membership.html"
+                                        class="hov-orf">Membership</a></p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="" class="hov-orf">Account
+                                        Analytics</a></p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="" class="hov-orf">Bid Insight</a>
+                                </p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="settings.html" class="hov-orf">Settings</a>
+                                </p>
+                                <p class="fs-5 fw-bolder my-4 text-start ms-4">Finances</p>
+                                <div class="balance d-flex justify-content-between">
+                                    <p class="text-start ms-4 fs-6 w-50"><a href="" class="hov-orf">Balance</a></p>
+                                    <p class="me-4">$1000.00 USD</p>
+                                </div>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="" class="hov-orf">Add funds</a>
+                                </p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="" class="hov-orf">Withdraw
+                                        funds</a></p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="" class="hov-orf">Transaction
+                                        history</a></p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="" class="hov-orf">Financial
+                                        Dashboard</a></p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="" class="hov-orf">Payment
+                                        sharing</a></p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="" class="hov-orf">Support</a></p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="index.html"
+                                        class="hov-orf">Logout</a></p>
+                                <p>App: 52c5b5b (1728954168 / 2024-10-14)</p>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Scroll Nav -->
+    <div class="scroll-nav w-100 justify-content-center align-items-center">
+        <div class="scroll-cont h-100 d-flex align-items-center">
+            <button class="btn d-flex align-items-center justify-content-evenly h-100 down-btn" autofocus>
+                <span class="fs-6 mx-2 text-white d-flex spann">Dashboard</span>
+            </button>
+            <button class="btn d-flex align-items-center justify-content-evenly h-100 down-btn">
+                <span class="fs-6 mx-2 text-white d-flex spann">Lists</span>
+            </button>
+            <button class="btn d-flex align-items-center justify-content-evenly h-100 down-btn">
+                <span class="fs-6 mx-2 text-white d-flex spann">Tasklists</span>
+            </button>
+            <button class="btn d-flex align-items-center justify-content-evenly h-100 down-btn">
+                <span class="fs-6 mx-2 text-white d-flex spann">My Projects</span>
+            </button>
+            <button class="btn d-flex align-items-center justify-content-evenly h-100 down-btn">
+                <span class="fs-6 mx-2 text-white d-flex spann">Inbox</span>
+            </button>
+            <button class="btn d-flex align-items-center justify-content-evenly h-100 down-btn">
+                <span class="fs-6 mx-2 text-white d-flex spann">Feedback</span>
+            </button>
+            <button class="btn d-flex align-items-center justify-content-evenly h-100 down-btn">
+                <span class="fs-6 mx-2 text-white d-flex spann">Free Credit</span>
+            </button>
+            <button class="btn d-flex align-items-center justify-content-evenly h-100 down-btn">
+                <span class="fs-6 mx-2 text-white d-flex spann">Project Updates</span>
+            </button>
+        </div>
+    </div>
+
+
+<main>
+    <h1 class="text-light">Maximize your success and earnings        </h1>
+    <p class="text-light">Try a Freelancer Membership to enjoy greater benefits.        </p>
+</main>
+
+
+
+<div id="modal" >
+    <div class="select-modal-container text-black" >
+        <div class="select-box" id="selectBox" onclick="showModal()">
+            <span>Monthly plan</span>
+            <i class="fa fa-chevron-down"></i> <!-- icon for dropdown -->
+        </div>
+    
+        <!-- Modal for Select Options -->
+        <div class="select-modal" id="selectModal">
+            <div class="select-modal-content">
+                <p onclick="selectOption('Monthly plan')">Monthly plan</p>
+                <p onclick="selectOption('Annual plan, Prepaid')">Annual plan, Prepaid</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<section>
+
+
+    <div class="stick ">
+        <div class="but">
+
+           <!-- <div class="left-bt">  -->
+            
+            <button class="nav-btn left-btn" id="tog-lf"><i class="fa fa-chevron-left"></i></button>
+           <!-- </div> -->
+
+
+           <!-- <div class="left-bt"> -->
+            <button class="nav-btn right-btn" id="tog-rt"><i class="fa fa-chevron-right"></i></button>   
+           <!-- </div> -->
+
+
+            <div class="basic position-relative ">
+                <div class="d-flex align-items-center">
+                    <img src="images/annual-level-two.svg" alt="">
+                    <p class="fs-6 fw-light pt-2">Basic</p>    
+                </div>             
+                <div class="tex">                <p >$4.50 USD                </p>                </div>   
+            </div> 
+
+
+
+
+        </div>    
+    </div>
+
+
+    <div class="container-fluid ">
+
+
+        <div class="billing-type text-black">
+            <span>Billing Type: Monthly</span> 
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked">Annual</label>
+            </div>
+              
+        </div>
+
+        <button class="nav-btn left-btn" id="lft-bt"><i class="fa fa-chevron-left"></i></button>
+
+
+        <div class="basic-box" id="first-box">
+            <img src="images/annual-level-two.svg" alt="">
+            <p class="fs-3 fw-light pt-2">Basic</p>
+
+
+            <!-- <div class="basic position-relative ">
+                <div class="d-flex align-items-center">
+                    <img src="images/annual-level-two.svg" alt="">
+                    <p class="fs-6 fw-light pt-2">Basic</p>    
+                </div>             
+                <div class="tex">                <p >$4.50 USD                </p>                </div>   
+            </div>  -->
+
+
+            <div class="dol-text">
+                <div class="d-flex">
+                    <div class="dol">$</div>
+                    <div class="fw-bolder">4.50</div>    
+                </div>
+
+                <!-- <div class="basic position-relative ">
+                    <div class="d-flex align-items-center">
+                        <img src="images/annual-level-two.svg" alt="">
+                        <p class="fs-6 fw-light pt-2">Basic</p>    
+                    </div>             
+                    <div class="tex">                <p >$4.50 USD                </p>                </div>   
+                </div>  -->
+
+
+                <div class="pb-2 bill"> / month</div>
+            </div>
+
+            <p class="bill billing">$54.00 billed annually</p>
+
+            <p class="text">You save $5.88</p>
+
+            <button>Upgrade</button>
+
+
+            <div class="p-texts">
+                <p> <i class="fa-solid fa-circle-check"></i><strong>50</strong> Bids per month</p>
+                <p> <i class="fa-solid fa-circle-check"></i><strong>50</strong> Skills</p>
+                <p><i class="fa-solid fa-circle-check"></i>Unlock rewards</p>
+                <p><i class="fa-solid fa-circle-check"></i><strong>Unlimited</strong> project bookmarks</p>
+                <p><i class="fa-solid fa-circle-check"></i>Preferred Freelancer eligible*</p>
+                <p><i class="fa-solid fa-circle-check"></i>Custom cover photo</p>
+                <p> <i class="fa-solid fa-circle-check"></i>   <strong>3</strong> Free highlighted contest entries / month</p>
+                <p>  <i class="fa-solid fa-circle-check"></i> <strong>12</strong> Free sealed contest entries / month</p>
+                <p>  <i class="fa-solid fa-circle-check"></i> <strong>5</strong> Employer followings</p>
+
+            </div>
+
+        </div>
+
+        <div class="basic-box" id="higher">
+            <img src="images/annual-level-two.svg" alt="">
+            <p class="fs-3 fw-light pt-2">Plus</p>
+
+            <!-- <div class="basic position-relative ">
+                <div class="d-flex align-items-center">
+                    <img src="images/annual-level-two.svg" alt="">
+                    <p class="fs-6 fw-light pt-2">Basic</p>    
+                </div>             
+                <div class="tex">                <p >$4.50 USD                </p>                </div>   
+            </div>  -->
+
+
+            <div class="dol-text">
+                <div class="d-flex">
+                    <div class="dol">$</div>
+                    <div class="fw-bolder"><strike>8.90</strike></div>
+                </div>
+                <div class="pb-2 bill">/ month</div>
+            </div>
+
+
+
+
+
+            <!-- <p class="bill billing">$54.00 billed annually</p> -->
+
+            <p class="text mt-4">Try one month free</p>
+
+            <button class="bg-success">Start Free Trial</button>
+
+
+            <div class="p-texts">
+                <p> <i class="fa-solid fa-circle-check"></i><strong>100</strong> Bids per month                    </p>
+                <p> <i class="fa-solid fa-circle-check"></i><strong>80</strong> Skiills</p>
+                <p> <i class="fa-solid fa-circle-check"></i>Client Engagement                    </p>
+                <p> <i class="fa-solid fa-circle-check"></i>Daily withdrawal requests                    </p>
+                <p><i class="fa-solid fa-circle-check"></i>Unlock rewards</p>
+                <p><i class="fa-solid fa-circle-check"></i><strong>Unlimited</strong> project bookmarks</p>
+                <p><i class="fa-solid fa-circle-check"></i>Preferred Freelancer eligible*</p>
+                <p><i class="fa-solid fa-circle-check"></i>Custom cover photo</p>
+                <p> <i class="fa-solid fa-circle-check"></i> <strong>5</strong> Free highlighted contest entries / month</p>
+                <p>  <i class="fa-solid fa-circle-check"></i>  <strong>25</strong> Free sealed contest entries / month</p>
+                <p>  <i class="fa-solid fa-circle-check"></i>  <strong>10</strong> Employer followings</p>
+                <p>  <i class="fa-solid fa-circle-check"></i>  <strong>5</strong> 5 External invoices                    </p>
+                <p>  <i class="fa-solid fa-circle-check"></i>  Project extensions                    </p>
+
+            </div>
+
+        </div>
+
+        <div class="basic-box">
+            <img src="images/annual-level-four.svg" alt="">
+            <p class="fs-3 fw-light pt-2">Professional</p>
+
+
+            <!-- <div class="basic position-relative ">
+                <div class="d-flex align-items-center">
+                    <img src="images/annual-level-two.svg" alt="">
+                    <p class="fs-6 fw-light pt-2">Basic</p>    
+                </div>             
+                <div class="tex">                <p >$4.50 USD                </p>                </div>   
+            </div>  -->
+
+
+
+            <div class="dol-text">
+                <div class="d-flex">
+                    <div class="dol">$</div>
+                    <div class="fw-bolder">4.50</div>
+                </div>
+                <div class="pb-2 bill">/ month</div>
+            </div>
+
+            <p class="bill billing">$478.80 billed annually</p>
+
+            <p class="text">You save $5.88</p>
+
+            <button>Upgrade</button>
+
+
+            <div class="p-texts">
+                <p> <i class="fa-solid fa-circle-check"></i><strong>300</strong> Bids per month                    </p>
+                <p> <i class="fa-solid fa-circle-check"></i><strong>100</strong> Skiills</p>
+                <p> <i class="fa-solid fa-circle-check"></i>Client Engagement                    </p>
+                <p> <i class="fa-solid fa-circle-check"></i>Bid Insights                    </p>
+                <p> <i class="fa-solid fa-circle-check"></i>Daily withdrawal requests                    </p>
+                <p><i class="fa-solid fa-circle-check"></i>Unlock rewards</p>
+                <p><i class="fa-solid fa-circle-check"></i><strong>Unlimited</strong> project bookmarks</p>
+                <p><i class="fa-solid fa-circle-check"></i>Preferred Freelancer eligible*</p>
+                <p><i class="fa-solid fa-circle-check"></i>Custom cover photo</p>
+                <p> <i class="fa-solid fa-circle-check"></i> <strong>15</strong> Free highlighted contest entries / month</p>
+                <p>  <i class="fa-solid fa-circle-check"></i>  <strong>75</strong> Free sealed contest entries / month</p>
+                <p>  <i class="fa-solid fa-circle-check"></i>  <strong>20</strong> Employer followings</p>
+                <p>  <i class="fa-solid fa-circle-check"></i>  <strong>15</strong> 5 External invoices                    </p>
+                <!-- <p>  <i class="fa-solid fa-circle-check"></i>  Project extensions                    </p>
+                <p>  <i class="fa-solid fa-circle-check"></i>  Sealed projects                    </p>
+                <p>  <i class="fa-solid fa-circle-check"></i>  Premium Freelancer Insights                    </p>
+                <p>  <i class="fa-solid fa-circle-check"></i>  High value project bidding*                    </p> -->
+
+            </div>
+
+        </div>
+
+        <div class="basic-box">
+            <img src="images/annual-level-four.svg" alt="">
+            <p class="fs-3 fw-light pt-2">Premier</p>
+
+
+            <!-- <div class="basic position-relative ">
+                <div class="d-flex align-items-center">
+                    <img src="images/annual-level-two.svg" alt="">
+                    <p class="fs-6 fw-light pt-2">Basic</p>    
+                </div>             
+                <div class="tex">                <p >$4.50 USD                </p>                </div>   
+            </div>  -->
+
+
+            <div class="dol-text">
+                <div class="d-flex">
+                    <div class="dol">$</div>
+                    <div class="fw-bolder">79.90</div>
+                </div>
+                <div class="pb-2 bill">/ month</div>
+            </div>
+
+            <p class="bill billing">$958.80 billed annually</p>
+
+            <p class="text">You save $5.88</p>
+
+            <button>Upgrade</button>
+
+            <div class="p-texts">
+                <p> <i class="fa-solid fa-circle-check"></i><strong>1500</strong> Bids per month                    </p>
+                <p> <i class="fa-solid fa-circle-check"></i><strong>400</strong> Skiills</p>
+                <p> <i class="fa-solid fa-circle-check"></i>Client Engagement                    </p>
+                <p> <i class="fa-solid fa-circle-check"></i>Bid Insights                    </p>
+                <p> <i class="fa-solid fa-circle-check"></i>Daily withdrawal requests                    </p>
+                <p><i class="fa-solid fa-circle-check"></i>Unlock rewards</p>
+                <p><i class="fa-solid fa-circle-check"></i><strong>Unlimited</strong> project bookmarks</p>
+                <p><i class="fa-solid fa-circle-check"></i>Preferred Freelancer eligible*</p>
+                <p><i class="fa-solid fa-circle-check"></i>Custom cover photo</p>
+                <p> <i class="fa-solid fa-circle-check"></i> <strong>30</strong> Free highlighted contest entries / month</p>
+                <p>  <i class="fa-solid fa-circle-check"></i>  <strong>150</strong> Free sealed contest entries / month</p>
+                <p>  <i class="fa-solid fa-circle-check"></i>  <strong>Unlimited</strong> Employer followings</p>
+                <p>  <i class="fa-solid fa-circle-check"></i>  <strong>Unlimited</strong> 5 External invoices                    </p>
+                <!-- <p>  <i class="fa-solid fa-circle-check"></i>  Project extensions                    </p>
+                <p>  <i class="fa-solid fa-circle-check"></i>  Sealed projects                    </p>
+                <p>  <i class="fa-solid fa-circle-check"></i>  Premium Freelancer Insights                    </p>
+                <p>  <i class="fa-solid fa-circle-check"></i>  Free NDA projects                    </p>
+                <p>  <i class="fa-solid fa-circle-check"></i>  High value project bidding*                    </p> -->
+
+            </div>
+
+
+        </div>
+
+        <button class="nav-btn right-btn" id="rgt-bt"><i class="fa fa-chevron-right"></i></button>   
+
+
+    </div>
+
+    <div class="beneath">
+        <p class="text-black">Prices displayed are in USD. Change plans anytime, conditions apply see <a href="">FAQ</a>.     </p>
+        <p class="text-black"> * Benefits require Membership plan and additional criteria for eligibility.        </p>    
+    </div>
+
+
+</section>
+
+
+<section class="benefits">
+
+    <h1 class="text-light">Do More. Earn More.        </h1>
+
+    <div class="contain">
+        <div class="benef">
+            <img src="bids-v1.svg" alt="">
+            <h4 class="my-3 text-light">Place more bids                </h4>
+            <p class="text-light">Reach more clients and increase your chances of winning projects with 300 additional bids per month.                </p>
+        </div>
+        <div class="benef">
+            <img src="skills-v1.svg" alt="">
+            <h4 class="my-3 text-light">Place more bids                </h4>
+            <p  class="text-light">Reach more clients and increase your chances of winning projects with 300 additional bids per month.                </p>
+        </div>
+    </div>
+    <div class="contain">
+        <div class="benef">
+            <img src="high-value-bidding-v1.svg" alt="">
+            <h4 class="my-3 text-light">Place more bids                </h4>
+            <p  class="text-light">Reach more clients and increase your chances of winning projects with 300 additional bids per month.                </p>
+        </div>
+        <div class="benef">
+            <img src="custom-cover-photo-v1.svg" alt="">
+            <h4 class="my-3 text-light">Place more bids                </h4>
+            <p  class="text-light">Reach more clients and increase your chances of winning projects with 300 additional bids per month.                </p>
+        </div>
+    </div>
+
+</section>
+
+
+
+<section class="Freq">
+    <div class="FAQ text-center">
+        <h2 class="py-5 fw-bold">Frequently Asked Questions        </h2>
+
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Why should I upgrade?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" >
+                <div class="accordion-body">You get more earning opportunities and better savings as a Basic, Plus, Professional or Premier member. Bid on more projects, add more skills, save on project listing upgrades and unlock special rewards!                    </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Can I change plans?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" >
+                <div class="accordion-body">Of course! Upgrade your membership plan at anytime to get additional benefits immediately. Alternatively, you can downgrade your membership and continue to receive the benefits of your current membership until it expires, before switching to the lower membership tier.                    </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    What is the Preferred Freelancer Program?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" >
+                <div class="accordion-body">Get Exclusive Access to the Best Projects with the Preferred Freelancer Program. <a href="">Read more</a>                    </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Can I cancel my membership?
+                </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" >
+                  <div class="accordion-body">Yes, you can cancel your membership at anytime with no additional charges.                    </div>
+                </div>
+            </div>
+
+
+            
+
+        </div>
+
+        
+        <div class="help py-5">            <a href="" type="button">Need More Help</a>            </div>
+
+
+
+
+
+
+    </div>
+
+</section>
+
+<footer class="futer w-100">
+    <div class="col-foot d-flex h-100 justify-content-between m-auto flex-wrap">
+        <div class="foot1 h-25">
+            <img src="freelancer-logo-light.svg" alt="" class="my-5 ms-3">
+            <div class="foot-wrd d-flex ms-3 align-items-center">
+                <span class="material-symbols-outlined fs-3 text-white">language</span>
+                <a href="" class="fs-7 ms-2">US(International) / English</a>
+            </div>
+            <div class="foot-wrd d-flex mt-4 ms-3 align-items-center">
+                <span class="material-symbols-outlined fs-3 text-white">help</span>
+                <a href="" class="fs-7 ms-2">Help & Support</a>
+            </div>
+            <div class="foot-wrd d-flex mt-4 ms-3 align-items-center">
+                <span class="material-symbols-outlined fs-3 text-white">accessibility_new</span>
+                <a href="" class="fs-7 ms-2">Accesibility</a>
+            </div>
+        </div>
+        <div class="col-foot2 d-flex justify-content-between">
+            <div class="foot2">
+                <p class="fs-7 fw-bolder text-white mt-5 ms-4">Freelancer</p>
+                <ul class="text-white fs-7">
+                    <li><a href="">Categories</a></li>
+                    <li><a href="">Project</a></li>
+                    <li><a href="">Contests</a></li>
+                    <li><a href="">Freelancers</a></li>
+                    <li><a href="">Enterprise</a></li>
+                    <li><a href="">AI Development</a></li>
+                    <li><a href="">Membership</a></li>
+                    <li><a href="">Preferred Freelancer</a></li>
+                    <li><a href="">Program</a></li>
+                    <li><a href="">Project Management</a></li>
+                    <li><a href="">Local Jobs</a></li>
+                    <li><a href="">Photo Anywhere</a></li>
+                    <li><a href="">Showcase</a></li>
+                    <li><a href="">API for Developers</a></li>
+                    <li><a href="">Get Verified</a></li>
+                    <li><a href="">Desktop App</a></li>
+                </ul>
+            </div>
+            <div class="foot3">
+                <p class="fs-6 fw-bolder text-white mt-5 ms-4">About</p>
+                <ul class="text-white fs-7">
+                    <li><a href="">About us</a></li>
+                    <li><a href="">How it works</a></li>
+                    <li><a href="">Security</a></li>
+                    <li><a href="">Investor</a></li>
+                    <li><a href="">Sitemap</a></li>
+                    <li><a href="">Stories</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Award</a></li>
+                    <li><a href="">Press Release</a></li>
+                    <li><a href="">Careers</a></li>
+                </ul>
+            </div>
+            <div class="foot4">
+                <p class="fs-6 fw-bolder text-white mt-5 ms-4">Terms</p>
+                <ul class="text-white fs-7">
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms and Conditions</a></li>
+                    <li><a href="">Copyright Policy</a></li>
+                    <li><a href="">Code of Conduct</a></li>
+                    <li><a href="">Fees and Charges</a></li>
+                </ul>
+            </div>
+            <div class="foot5">
+                <p class="fs-6 fw-bolder text-white mt-5 ms-4">Partners</p>
+                <ul class="text-white fs-6">
+                    <li><a href="">Escrow.com</a></li>
+                    <li><a href="">Loadshift</a></li>
+                    <li><a href="">Warrior</a></li>
+                </ul>
+            </div>
+            <div class="foot6 d-block me-4">
+                <p class="fs-6 fw-bolder text-white mt-5 ms-4">Apps</p>
+                <div class="two-btn mt-3">
+                    <div class="bus">
+                        <div><img src="app-store.svg" alt=""></div>
+                        <!-- <div class="net">
+                            <h6>Available on the</h6>
+                            <p>App store</p>
+                        </div> -->
+                    </div>
+
+                    <div class="bus">
+                        <div>
+                            <img src="google-play.svg" alt="">
+                        </div>
+
+                        <!-- <div class="net">
+                            <h6>GET IT ON</h6>
+                            <p>Google Play</p>
+                        </div> -->
+                    </div>
+                    <!-- <button onclick="window.location.href='https://www.freelancer.com/download'" class="ms-3 btn1"></button><br>
+                    <button onclick="window.location.href='https://www.freelancer.com/download'" class="ms-3 mt-4 btn2"></button> -->
+                </div>
+                <div class="media-icon w-100 mt-4">
+                    <i class="fa-brands fa-facebook fs-5 ms-4"></i>
+                    <i class="fa-brands fa-twitter fs-5 ms-4"></i>
+                    <i class="fa-brands fa-youtube fs-5 ms-4"></i>
+                    <i class="fa-brands fa-instagram fs-5 ms-4"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="my-5 foot-line">
+    <div class="three-foot d-flex flex-wrap">
+        <div class="lst-foot1">
+            <p class="text-white fs-6 fw-bolder mt-2">76,642,972</p>
+            <p class="text-white mt-2">Registered Users</p>
+        </div>
+        <div class="lst-foot1">
+            <p class="text-white fs-6 fw-bolder mt-2">24,161,048</p>
+            <p class="text-white mt-2">Total Jobs Posted</p>
+        </div>
+        <div class="lst-foot2">
+            <p class="text-white end-txt">Freelancer ® is a registered Trademark of Freelancer Technology Pty
+                Limited (ACN 142 189 759)
+                Copyright © 2024 Freelancer Technology Pty Limited (ACN 142 189 759)</p>
+        </div>
+    </div><br>
+</footer>
+
+
+<!-- Messages -->
+<footer class="foot" id="footer">
+    <div class="top-show d-flex align-items-center justify-content-between">
+        <p class="fs-6 text-white mt-3">Messages</p>
+        <div class="icon-mess">
+            <button class="btn2"><i class="fa-solid fa-bell fs-5 text-white"></i></button>
+            <button class="btn2" id="toggleFooterBtn"><i class="fa-solid fa-circle-dot fs5 text-white"></i></button>
+        </div>
+        <div class="mess-cont position-absolute d-flex flex-column justify-content-around align-items-center w-100">
+            <div class="inp-srch-foot d-flex justify-content-between align-items-center mt-4">
+                <i class="fa-solid fa-magnifying-glass fs-4 ms-4"></i>
+                <input type="text" placeholder="Search" class="h-100 fs-5 me-4">
+            </div>
+            <div class="mana1 d-flex justify-content-between align-items-start mb-4">
+                <p class="fs-6 fw-bolder me-4">Chats</p>
+                <a href="" class="fs-6">Requests</a>
+            </div>
+            <img src="live-chat.svg" class="mess" alt="">
+            <b class="fs-6">Welcome to your messages</b>
+            <p class="fs-6 text-center mb-5">Start connecting with others by <a href="">browsing</a> or <a
+                    href="">posting a project</a></p>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
+
+
+<script>
+const boxes = document.querySelectorAll('.basic-box');
+const prevBtn = document.getElementById('lft-bt');
+const nextBtn = document.getElementById('rgt-bt');
+let currentIndex = 0;
+
+// Function to show the box by index
+function showBox(index) {
+boxes.forEach((box, i) => {
+    box.classList.remove('active');
+    if (i === index) {
+    box.classList.add('active');
+    }
+});
+}
+
+// Initialize the first box
+showBox(currentIndex);
+
+// Add event listeners for navigation buttons
+nextBtn.addEventListener('click', () => {
+currentIndex = (currentIndex + 1) % boxes.length;
+showBox(currentIndex);
+});
+
+prevBtn.addEventListener('click', () => {
+currentIndex = (currentIndex - 1 + boxes.length) % boxes.length;
+showBox(currentIndex);
+});
+
+
+
+
+
+</script>
+
+<script>
+const boxe = document.querySelectorAll('.basic-box');
+const prevBt = document.getElementById('tog-lf');
+const nextBt = document.getElementById('tog-rt');
+let currentInde = 0;
+
+// Function to show the box by index
+function showBox(index) {
+boxe.forEach((box, i) => {
+    box.classList.remove('active');
+    if (i === index) {
+    box.classList.add('active');
+    }
+});
+}
+
+// Initialize the first box
+showBox(currentInde);
+
+// Add event listeners for navigation buttons
+nextBt.addEventListener('click', () => {
+currentInde = (currentInde + 1) % boxe.length;
+showBox(currentInde);
+});
+
+prevBt.addEventListener('click', () => {
+currentInde = (currentInde - 1 + boxe.length) % boxe.length;
+showBox(currentInde);
+});
+</script>
+
+
+
+
+
+<script>
+function showModal() {
+    const modal = document.getElementById("selectModal");
+    modal.style.display = "flex"; // Show the modal
+
+    // Close modal when clicking outside the modal content
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            hideModal();
+        }
+    };
+}
+
+function hideModal() {
+    document.getElementById("selectModal").style.display = "none"; // Hide the modal
+}
+
+function selectOption(option) {
+    // Set the selected option in the select box
+    document.getElementById("selectBox").querySelector("span").innerText = option;
+    hideModal(); // Hide modal after selection
+}
+
+</script>
+
+
+<script>
+window.addEventListener("scroll", function () {
+    var dolText = document.querySelector(".dol-text");
+    var stickyButtons = document.getElementById("sticky-buttons");
+
+    // Check if the .dol-text div is scrolled past
+    var dolTextPosition = dolText.getBoundingClientRect().top;
+    
+    if (dolTextPosition <= 0) {
+        stickyButtons.style.display = "block";  // Show the sticky buttons when you scroll past the .dol-text div
+    } else {
+        stickyButtons.style.display = "none";   // Hide the sticky buttons when above the .dol-text div
+    }
+});
+
+</script>
+
+
+
+
+
+
+<script>
+// Function to manage the visibility of the sticky div
+const stickyDiv = document.querySelector('.stick'); // Select the sticky div
+const firstBox = document.querySelector('.container-fluid'); // Select the element with the id 'first-box'
+
+window.addEventListener('scroll', () => {
+    const firstBoxRect = firstBox.getBoundingClientRect(); // Get the position of the first box
+
+    // Check if the top of the first box is above the viewport (i.e., user has scrolled up past it)
+    if (firstBoxRect.top < 0) {
+        stickyDiv.style.display = 'block'; // Show the sticky div
+    } else {
+        stickyDiv.style.display = 'none'; // Hide the sticky div
+    }
+
+    // Check if the user is scrolling down past the first box
+    if (firstBoxRect.top > window.innerHeight) {
+        stickyDiv.style.display = 'none'; // Hide the sticky div when scrolling down past the first box
+    }
+});
+
+</script>
+
+
+<script>
+// Select the toggle button and the footer
+const toggleFooterBtn = document.getElementById('toggleFooterBtn');
+const footer = document.getElementById('footer');
+
+// Add a click event listener to the toggle button
+toggleFooterBtn.addEventListener('click', function() {
+    // Toggle the 'footer-open' class on the footer
+    footer.classList.toggle('footer-open');
+
+    // Optionally, you can change the chevron direction when the footer is opened or closed
+    const icon = toggleFooterBtn.querySelector('i');
+    if (footer.classList.contains('footer-open')) {
+        icon.classList.remove('fa-chevron-up');
+        icon.classList.add('fa-chevron-down'); // Change to chevron down when opened
+    } else {
+        icon.classList.remove('fa-chevron-down');
+        icon.classList.add('fa-chevron-up');   // Change back to chevron up when closed
+    }
+});
+</script>
+
+
+
+<script>
+// Get the buttons
+const recentBtn = document.getElementById('recentBtn');
+const savedBtn = document.getElementById('savedBtn');
+
+// Add event listeners to toggle the 'active' class
+recentBtn.addEventListener('click', function() {
+    recentBtn.classList.add('active');
+    savedBtn.classList.remove('active');
+});
+
+savedBtn.addEventListener('click', function() {
+    savedBtn.classList.add('active');
+    recentBtn.classList.remove('active');
+});
+
+
+
+// Get the gear button and settings menu
+const gearButton = document.getElementById('gear-btn');
+const settingsMenu = document.getElementById('settings-btn');
+const chevronLeft = document.getElementById('chevron-left');
+
+// Show the settings menu when the gear button is clicked
+gearButton.addEventListener('focus', function() {
+    settingsMenu.style.display = 'block';
+});
+
+// Hide the settings menu when the chevron left is clicked
+chevronLeft.addEventListener('click', function() {
+    settingsMenu.style.display = 'none';
+});
+
+
+
+</script>
